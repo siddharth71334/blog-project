@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpRequest, HttpResponse
 
 from .models import Posts
@@ -15,7 +15,7 @@ def home(request):
     return render(request, template_name='home.html')
 
 def resume(request):
-    return 
+    pass
 
 def about(request):
     """
@@ -32,3 +32,7 @@ class PostListView(ListView):
     template_name = 'home.html'
     context_object_name = 'posts'
     ordering = ['-date_posted']
+
+
+class PostDetailView(DetailView):
+    model = Posts

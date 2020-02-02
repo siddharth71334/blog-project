@@ -5,7 +5,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{% static '/blog/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/blog_app/style.css' %}">
     <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     
@@ -22,9 +22,9 @@
     <nav id="nav">
         <ul>
             <li><a class="navbar-elements" href="{% url 'blog-home' %}">HOME</li>  
-            {% comment %} <li><a class="navbar-elements" href="{% url 'blog-about' %}">ABOUT</li>   {% endcomment %}
+            <li><a class="navbar-elements" href="{% url 'blog-about' %}">ABOUT</li>  
             {% comment %} <li><a class="navbar-elements" href="{% url 'profile' %}">PROFILE</a></li> {% endcomment %}
-            {% comment %} <li><a class="navbar-elements" href="{% url 'blog-resume' %}">RESUME</li>   {% endcomment %}
+            <li><a class="navbar-elements" href="{% url 'blog-resume' %}">RESUME</li>
         </ul>
     </nav>
     </div>
@@ -36,7 +36,7 @@
     <div class="footer">
         <p>--------------------------------------------------------------</p>
 
-        <p> Made with <3 by Shubhashish</p>
+        <p> Made by Shubhashish </p>
     </div>
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
