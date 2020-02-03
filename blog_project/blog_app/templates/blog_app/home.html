@@ -11,7 +11,7 @@
 
   {% for post in posts %}
       <article class="media content-section">
-      <img class="rounded-circle article-img" src="{{ post.uploader.profile.image.url }}">
+      {% comment %} <img class="rounded-circle article-img" src="{{ post.uploader.profile.image.url }}"> {% endcomment %}
         <div class="media-body">
           <div class="article-metadata">
             <p class="mr-2">{{ post.uploader }}</p>
